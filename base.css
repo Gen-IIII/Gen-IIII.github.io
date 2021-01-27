@@ -1,0 +1,63 @@
+#header{
+    color: black;
+    
+}
+
+#header a{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: medium;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    color: black;
+}
+
+#head_menu{
+    overflow: hidden;
+}
+
+#head_menu li{
+    width: 140px; 
+    height: 40px;
+    line-height: 40px;
+    margin-left: 2px;
+    text-align: center;
+    background-color: rgb(114, 62, 145); 
+    float: left; 
+    list-style: none; 
+}
+
+#head_menu li a{
+    color: rgb(255, 255, 255); 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-decoration: none;
+    padding: 7px;
+}
+
+#main{
+    font-size: medium;
+}
+
+#side_menu{
+    width: 150px;
+    float: left;
+}
+#side_menu ul{
+    margin-top: 0px;
+}
+#side_menu li{
+    list-style: none;
+}
+#side_menu h3{
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: rgb(144, 131, 157);
+}
+
+#body{
+    margin: 0px 0px 0px; clear: both;
+}
+
+#footer{
+    margin: 20px 0px 0px; height: 40px; text-align: right; color: dimgray; clear: both;
+}

@@ -1,11 +1,15 @@
+#wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 body{
     width: 980px;
     margin: 0 auto;
     background-color: rgb(39, 39, 39);
 }
 #header{
-    color: black;
-    
+    color: white;    
 }
 
 #header a{
@@ -13,11 +17,21 @@ body{
     font-size: 40px;
     font-weight: medium;
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    color: black;
+    color: white;
 }
 
 #head_menu{
+    background-color: rgba(115, 62, 145, 0.5);
     overflow: hidden;
+    height: 40px;
+    width: auto;
+}
+
+#head_menu ul{
+    width: auto;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
 }
 
 #head_menu li{
@@ -39,33 +53,38 @@ body{
     padding: 7px;
 }
 
+#container{
+    display: flex;
+}
+
 #main_contents{
     font-size: medium;
-    margin-left: 210px;
-    padding-left: 20px;
-    width: 720px;
+    width: 80%;
     min-height: 500px;
     height: auto;
+    padding-left: 15px;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 #side_menu{
     background-color: rgba(255, 255, 255, 0.7);
-    width: 200px;
+    width: 20%;
     min-height: 500px;
     height: auto;
-    float: left;
+    padding-right: 5px;
+    border-right: medium solid rgba(255, 255, 255, 0.2);
 }
 #side_menu ul{
-    background-color: rgba(255, 255, 255, 0.7);
     margin-top: 0px;
 }
 #side_menu li{
     list-style: none;
 }
 #side_menu h3{
+    height: 35px;
     text-align: center;
-    margin-bottom: 0px;
+    margin: 5px 0px 0px 0px;
+    padding-top: 5px;
     background-color: rgb(144, 131, 157);
 }
 

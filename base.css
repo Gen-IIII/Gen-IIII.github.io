@@ -1,4 +1,6 @@
 body{
+    width: 980px;
+    margin: 0 auto;
     background-color: rgb(39, 39, 39);
 }
 #header{
@@ -37,15 +39,21 @@ body{
     padding: 7px;
 }
 
-#main{
+#main_contents{
     font-size: medium;
-    float: left;
+    margin-left: 210px;
+    padding-left: 20px;
+    width: 720px;
+    min-height: 500px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 #side_menu{
     background-color: rgba(255, 255, 255, 0.7);
-    width: 150px;
+    width: 200px;
+    min-height: 500px;
+    height: auto;
     float: left;
 }
 #side_menu ul{
@@ -61,8 +69,10 @@ body{
     background-color: rgb(144, 131, 157);
 }
 
-#body{
-    margin: 0px 0px 0px; clear: both;
+#wrapper{
+    margin: 0px 0px 0px;
+    height: auto;
+    clear: both;
 }
 
 #footer{

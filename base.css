@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(39, 39, 39);
+}
 #header{
     color: black;
     
@@ -36,13 +39,17 @@
 
 #main{
     font-size: medium;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #side_menu{
+    background-color: rgba(255, 255, 255, 0.7);
     width: 150px;
     float: left;
 }
 #side_menu ul{
+    background-color: rgba(255, 255, 255, 0.7);
     margin-top: 0px;
 }
 #side_menu li{

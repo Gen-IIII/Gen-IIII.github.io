@@ -1,13 +1,14 @@
 #wrapper{
     max-width: 1000px;
-    margin: 0 auto;
     font-family: monospace;
+    border: 3px outset;
+    background-color: rgb(212, 208, 199);
 }
 
 body{
     max-width: 1000px;
-    margin: 0 auto;
-    background-color: rgb(212, 208, 199);
+    margin: 15px auto 15px auto;
+    background-color: rgb(86, 170, 170);
 }
 #header{
     color: black;    
@@ -39,8 +40,10 @@ body{
     width: 140px; 
     height: 40px;
     line-height: 40px;
-    margin-left: 2px;
+    margin-left: 8px;
     border: medium outset;
+    border-right: medium outset rgb(135, 135, 135);
+    border-bottom: medium outset rgb(135, 135, 135);
     text-align: center;
     float: left; 
     list-style: none; 
@@ -56,13 +59,18 @@ body{
 
 #container{
     display: flex;
-    border: thick ridge;
+    border-right: thick inset;
+    border-bottom: medium inset;
+    border-top: medium outset rgb(60, 60, 60);
+    border-left: thick outset rgb(60, 60, 60);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #main_contents{
     font-size: medium;
     width: 80%;
-    min-height: 500px;
+    max-height: 550px;
     height: auto;
     margin-left: 5px;
     padding-left: 15px;
@@ -70,7 +78,7 @@ body{
 
 #side_menu{
     width: 20%;
-    min-height: 500px;
+    max-height: 550px;
     height: auto;
     overflow-y: scroll;
     border-right: thick groove;
@@ -89,18 +97,25 @@ body{
 #side_menu h3{
     height: 35px;
     text-align: center;
+    color: white;
     margin: 5px 0px 0px 0px;
     padding-top: 10px;
-    background-color: rgb(0, 251, 255);
+    background-color: rgb(0, 1, 171);
     border: thick ridge;
 }
 
-#wrapper{
-    margin: 0px 0px 0px;
-    height: auto;
+
+
+#footer{
+    margin: 5px 5px 10px; 
+    height: 20px; 
+    border: medium inset;
+    text-align: right; 
+    color: dimgray; 
     clear: both;
 }
 
-#footer{
-    margin: 20px 0px 0px; height: 40px; text-align: right; color: dimgray; clear: both;
+#footer p{
+    margin-top: 3px;
+    margin-right: 5px;
 }

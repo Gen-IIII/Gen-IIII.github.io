@@ -103,7 +103,7 @@ body{
 
 }
 #side_menu li{
-    list-style: url(icon\bookicon.png) inside;
+    list-style: url(icon/bookicon.png) inside;
     padding-top: 1px;
     padding-left: 10px;
 }
@@ -118,15 +118,15 @@ body{
 }
 
 #outlink li:nth-child(1){
-    list-style: url(icon\twiicon.png) inside;
+    list-style: url(icon/twiicon.png) inside;
 }
 
 #outlink li:nth-child(2){
-    list-style: url(icon\githicon.png) inside;
+    list-style: url(icon/githicon.png) inside;
 }
 
 #outlink li:nth-child(3){
-    list-style: url(icon\denkiicon.png) inside;
+    list-style: url(icon/denkiicon.png) inside;
 }
 
 footer{

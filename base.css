@@ -60,6 +60,13 @@ body{
     list-style: none; 
 }
 
+#head_menu li:active{
+    border: medium inset;
+    border-left: medium inset rgb(135, 135, 135);
+    border-top: medium inset rgb(135, 135, 135);
+    background-color: rgb(189, 189, 189);
+}
+
 #head_menu li a{
     color: rgb(0, 0, 0);
     font-size: 18px; 
@@ -156,6 +163,13 @@ footer{
     text-align: right; 
     color: dimgray; 
     overflow: hidden;
+}
+
+#footer a{
+    color: dimgray; 
+}
+#footer a:hover{
+    color: rgb(31, 31, 31); 
 }
 
 #footer p{

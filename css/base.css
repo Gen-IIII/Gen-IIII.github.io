@@ -1,19 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
-:root{
-    --bg1: #FDF7F3;
-    --border: #262626;
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&family=Ubuntu:wght@500&family=Zen+Kaku+Gothic+Antique&display=swap");
+:root {
+  --acc: #ff0059;
 }
 
-body{
-    font-size: 18px;
-    line-height: 2em;
-    background-color: var(--bg1);
+body {
+  min-height: 1080px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 18px;
+  line-height: 2em;
+  margin: 0;
+  padding: 0;
 }
-header{
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.5em;
-    height: 30px;
-    color: black;
-    font-family: 'Ubuntu', sans-serif;
+header {
+  height: 30px;
+  border-bottom: 2px dashed black;
+}
+#title{
+    font-size: 20px;
+    font-weight: bold;
+}
+#title1{
+    margin-right: 0.5em;
+}
+#wrapper{
+    display: flex;
+}
+#maincont{
+    width: 90%;
+}
+#MenuBox{
+    width: 10%;
+}
+#Menulist li{
+    list-style-type: '> ';
+}
+#Menulist li#CurrentPage{
+    list-style-type: '-> ';
+    font-weight: bold;
+}
+#MenuBoxTitle {
+font-size: 40px;
+  line-height: 0.5em;
+  font-family: "Red Hat Mono", monospace;
+  color: var(--acc);
+  text-align: center;
 }

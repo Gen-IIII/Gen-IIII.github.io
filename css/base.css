@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+:root{
+    --bg1: #FDF7F3;
+    --border: #262626;
+}
+
+body{
+    font-size: 18px;
+    line-height: 2em;
+    background-color: var(--bg1);
+}
+header{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5em;
+    height: 30px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}

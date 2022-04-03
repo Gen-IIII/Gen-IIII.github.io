@@ -1,94 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&family=Ubuntu:wght@500&family=Zen+Kaku+Gothic+Antique&display=swap");
-:root {
-  --acc: #ff0059;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+:root{
+    --bg1: #FDF7F3;
+    --border: #262626;
 }
 
-body {
-  min-height: 1080px;
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-size: 18px;
-  line-height: 2em;
-  margin: 0;
-  padding: 0;
+body{
+    font-size: 18px;
+    line-height: 2em;
+    background-color: var(--bg1);
 }
-#wrapper {
-  display: flex;
-  min-height: 1080px;
-}
-#maincont {
-    width: 90%;
-    height: 100%;
-}
-header {
-    height: 40px;
-    border-bottom: 2px dashed black;
-}
-#title {
-    font-size: 20px;
-    font-weight: bold;
-}
-#title1 {
-    margin-right: 0.5em;
-}
-#PageWrap {
-    display: flex;
-    height: 100%;
-}
-#PageTitle {
-    width: 50px;
-    font-size: 50px;
-    font-weight: bold;
-    font-style: italic;
-}
-#PageTitleTxt {
-    position: fixed;
-    height: 50px;
-    bottom: 0px;
-    left: 0px;
-    transform: rotate(270deg);
-    transform-origin: left top;
-}
-#PageCont{
-    display: flex;
-    width: calc(100% - 50px);
-    height: 100%;
-}
-.col{
-    width: 30%;
-    height: 100%;
-}
-.colborder{
-    width: 3%;
-    transform: rotate(90deg);
-    transform-origin: left bottom;
-    
-}
-#lastborder{
-    width: 4% !important;
-}
-
-
-
-
-#MenuBox {
-  width: 10%;
-  height: 100%;
-}
-#Menulist li {
-  list-style-type: "> ";
-}
-#Menulist li#CurrentPage {
-  list-style-type: "-> ";
-  font-weight: bold;
-}
-#MenuBoxTitle {
-  font-size: 40px;
-  line-height: 0.5em;
-  font-family: "Red Hat Mono", monospace;
-  color: var(--acc);
-  text-align: center;
-}
-.emoji {
-  font-family: "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji",
-    "Noto Color Emoji", "Noto Emoji", sans-serif;
+header{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5em;
+    height: 30px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
 }

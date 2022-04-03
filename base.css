@@ -1,0 +1,178 @@
+#wrapper{
+    max-width: 1000px;
+    font-family: monospace;
+    border: 3px outset;
+    background-color: rgb(212, 208, 199);
+}
+
+body{
+    max-width: 1000px;
+    margin: 15px auto 15px auto;
+    background-color: rgb(0,128,129);
+}
+
+#head_tab{
+    background-color: rgb(0, 1, 171);
+    color: white;
+}
+
+#head_tab p{
+    margin: 0px;
+    padding: 3px 3px;
+}
+
+#header{
+    color: black;    
+}
+
+#header a{
+    text-decoration: none;
+    font-size: 40px;
+    padding-left: 5px;
+    font-weight: bolder;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    color: black;
+}
+
+#head_menu{
+    overflow: auto;
+    height: 50px;
+    width: auto;
+}
+
+#head_menu ul{
+    width: auto;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#head_menu li{
+    width: 140px; 
+    height: 40px;
+    line-height: 40px;
+    margin-left: 8px;
+    border: medium outset;
+    border-right: medium outset rgb(135, 135, 135);
+    border-bottom: medium outset rgb(135, 135, 135);
+    text-align: center;
+    float: left; 
+    list-style: none; 
+}
+
+#head_menu li:active{
+    border: medium inset;
+    border-left: medium inset rgb(135, 135, 135);
+    border-top: medium inset rgb(135, 135, 135);
+    background-color: rgb(189, 189, 189);
+}
+
+#head_menu li a{
+    color: rgb(0, 0, 0);
+    font-size: 18px; 
+    font-weight: bold; 
+    text-decoration: none;
+    display: block;
+}
+
+#container{
+    display: flex;
+    border-right: 4px inset;
+    border-bottom: medium inset;
+    border-top: medium outset rgb(50, 50, 50);
+    border-left: 4px outset rgb(50, 50, 50);
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: white;
+}
+
+#main_contents{
+    font-size: medium;
+    width: 80%;
+    max-height: 550px;
+    overflow-y: scroll;
+    height: auto;
+    margin-left: 5px;
+    padding-left: 15px;
+}
+
+#side_menu{
+    width: 20%;
+    max-height: 550px;
+    height: auto;
+    overflow-y: scroll;
+    border-right: thick groove;
+    background-color:  white;
+}
+#side_menu ul{
+    margin-top: 5px;
+    padding-left: 0px;
+
+}
+#side_menu li{
+    list-style: url(icon/bookicon.png) inside;
+    padding-top: 1px;
+    padding-left: 10px;
+}
+#side_menu h3{
+    height: 35px;
+    text-align: center;
+    color: white;
+    margin: 5px 0px 0px 0px;
+    padding-top: 10px;
+    background-color: rgb(0, 1, 171);
+    border: thick ridge;
+}
+
+#outlink li:nth-child(1){
+    list-style: url(icon/twiicon.png) inside;
+}
+
+#outlink li:nth-child(2){
+    list-style: url(icon/githicon.png) inside;
+}
+
+#outlink li:nth-child(3){
+    list-style: url(icon/denkiicon.png) inside;
+}
+
+footer{
+    display: flex;
+}
+
+#foot_sitebar{
+    margin: 5px 2px 10px 5px; 
+    height: 20px; 
+    width: 85%;
+    border: medium inset; 
+    color: dimgray; 
+    overflow: hidden;
+}
+
+
+#foot_sitebar p{
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+#footer{
+    margin: 5px 5px 10px; 
+    height: 20px; 
+    width: 15%;
+    border: medium inset;
+    text-align: right; 
+    color: dimgray; 
+    overflow: hidden;
+}
+
+#footer a{
+    color: dimgray; 
+}
+#footer a:hover{
+    color: rgb(31, 31, 31); 
+}
+
+#footer p{
+    margin-top: 3px;
+    margin-right: 5px;
+}

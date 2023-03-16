@@ -1,6 +1,6 @@
 function smoothScrollTo(element, duration = 3000) {
   const start = window.pageYOffset;
-  const targetPosition = element.getBoundingClientRect().top + 30; // ターゲット要素の相対位置を計算する
+  const targetPosition = element.getBoundingClientRect().top // ターゲット要素の相対位置を計算する
   const startTime =
     "now" in performance ? performance.now() : new Date().getTime();
   const easeInOutQuad = (t, b, c, d) => {
@@ -58,3 +58,4 @@ ctaButton.addEventListener("mouseout", () => {
   ctaButton.style.transform = "none";
 
 });
+

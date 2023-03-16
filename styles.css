@@ -1,3 +1,4 @@
+
 body {
     background-color: #021941;
     color: #ffffff;
@@ -14,6 +15,7 @@ h3 {
     font-weight: 700;
     margin-bottom: 0.5em;
 }
+
 
 h1 {
     font-size: 3.5em;
@@ -48,9 +50,15 @@ a {
     color: #ff7a00;
     text-decoration: none;
 }
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .container {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 2em;
 }
@@ -76,6 +84,20 @@ header img {
     padding-bottom: 7em;
     text-align: center;
 }
+.hero::before {
+    content: "";
+    background-image: url('your-second-image.png');
+    background-size: cover;
+    background-position: right bottom;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 .hero h2{
     font-size: 3em;
 }
@@ -96,6 +118,8 @@ header img {
 
 .cta-button:hover {
     background-color: #FFA000;
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:active {
@@ -103,8 +127,19 @@ header img {
     /* Reset the button position on active state */
 }
 
+#demo-section{
+    background: linear-gradient(135deg, #021941, #0d3b66);
+    background-image: url('your-image.png');
+}
+
+.scrollify {
+    min-height: 100vh;
+}
+
 .demo-section {
+    min-height: 100vh;
     text-align: center;
+    margin-top: 4em;
 }
 .demo-section h3{
     margin-top: 0.3em;
@@ -115,9 +150,27 @@ header img {
 }
 
 .demo {
+    font-family: 'Roboto Mono', monospace;
     margin: 0;
 }
+.tooltip {
+    position: absolute;
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    transform: translate(-50%, -120%);
+    z-index: -1;
+}
 
+.brush-preview {
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 50%;
+    pointer-events: none;
+}
 
 
 .column {
@@ -136,20 +189,50 @@ header img {
     padding: 1rem 2rem;
 }    
 
+.box-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.box-shadow:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
 .column .col-lg-6{
     align-self: center;
 }    
 
+
+#tech-section {
+    background: #00283c;
+}
+
+#demo-section, #vision-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tech-overview {
+    padding-top: 2em;
+}    
+.tech-overview h2 {
+    padding-top: 2em;
+    margin-left: 1em;
+}    
 .column .col-md-4{
     padding-top: 0;
 }
 .column .col-md-4-right{
     width: 70%;
     align-self: flex-end;
+    margin-right: 8em;
 }    
 .column .col-md-4-left{
     width: 70%;
     align-self: flex-start;
+    margin-left: 8em;
 }    
 .column .col-md-4 .flexcont{
     flex-wrap: wrap;
@@ -179,43 +262,58 @@ header img {
     text-align: right;
 }
 
+.tech-overview .column .col-md-4:last-child{
+    padding-bottom: 4em;
+}
+
 
 .col-md-4 img{
     width: 300px;
 }    
 
 
-.tech-overview {
-    margin-top: 2em;
-}    
 
 
 .row-vm-3{
+    padding-top: 2em;
     width: 50%;
     text-align: center;
+    padding-bottom: 2em;
 }
 .row-vm-3 p{
     line-height: 2em;
 }
 
+#vision-section {
+    background-image: url('your-vision-image.png');
+}
 .vision-mission {
-    margin-top: 2em;
+    text-align: center;
+    padding-top: 2em;
+    height: calc(100vh - 2em);
+    position: relative;
 }
 
 footer {
-    position: relative;
-    height: 480px;
-    text-align: center;
     font-size: 0.9em;
     margin-top: 2em;
-}
-footer img{
-    margin-top: 2em;
-    width: 200px;
-}
-
-footer p{
-    width: 100%;
     position: absolute;
     bottom: 0;
+    width: 100%;
+}
+.vision-mission img{
+    margin-top: 4em;
+    width: 200px;
+}
+.camname{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    line-height: 1.2;
+    width: fit-content;
+    padding: 0 1em;
+    margin: 0.8em auto;
+}
+footer p{
+    text-align: center;
+    width: 100%;
 }

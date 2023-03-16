@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDLab CoreInk</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_canvas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+</head>
+
+<body>
+    <header>
+        <img src="logo-image.png" alt="Company Logo">
+        <h1>UnrefinedDesignLab</h1>
+    </header>
+    
+    <section class="hero">
+        <h2>UDL CoreInk</h2>
+        <h2>革新的な描画技術で、デジタルアートを進化させる</h2>
+        <h3>新しいドローイングツールで、クリエイティブの未来を体験しよう</h3>
+        <a href="#demo-section" class="cta-button">Try Our Demo</a>
+    </section>
+
+    <section id="demo-section" class="demo-section container">
+        <div class="column">
+            <div class="col-lg-6">
+                <h3>
+                    インタラクティブなデモを通じて、<br>
+                    CoreInkのパワーと汎用性をご確認ください
+                </h3>
+                <p>
+                    無制限のカラー・ピッカー、ダイナミック・ブラシサイズ・コントロール(DBC)、直感的なインターフェイスを体験して、<br>
+                    創造性を解き放ち、デジタル・アートの未来を直に体験してみましょう!
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="demo">
+                    <div class="toolbar">
+                        <button id="clearButton">CLR</button>
+                        <input type="color" id="colorPicker" value="#000000">
+                        <input type="range" id="brushSize" min="1" max="50" value="5">
+                        <label for="brushSize">SIZE</label>
+                    </div>
+                    <canvas id="drawingCanvas" width="800" height="600"></canvas>
+                    <script src="app.js"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-overview container">
+        <h2>CoreInkの最新技術</h2>
+        <div class="column">
+            <div class="col-md-4 col-md-4-left">
+                <h3>直感的なインターフェース</h3>
+                <div class="flexcont">
+                    <img src="intuitive-interface-image.png" alt="Intuitive Interface">
+                    <p>
+                        クリエイティブなワークフローを強化し、生産性を最大化するための、<br>
+                        シームレスで使いやすいインターフェース
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-4-right">
+                <h3>無制限のカラー・ピッカー</h3>
+                <div class="flexcont">
+                    <p>
+                        あなたの色彩感覚を存分に発揮可能な、<br>
+                        かつてない精度と操作性を備えたGUI
+                    </p>
+                    <img src="color-picker-image.png" alt="Highly Designed Color Picker">
+                </div>
+            </div>
+                <div class="col-md-4 col-md-4-left">
+                    <h3>ダイナミック・ブラシサイズ・コントロール</h3>
+                    <div class="flexcont">
+                        <img src="brush-size-control.png" alt="Dynamic Brush Size Control">
+                        <p>
+                            あらゆるレベルのディテールを描画可能にする、<br>
+                            GUIベースの革新的ブラシサイズコントロール
+                        </p>
+                    </div>
+            </div>
+        </div>
+            
+    
+    </section>
+    
+    <section class="vision-mission container">
+        <div class="row">
+            <div class="row-vm-3">
+                <h2>Our Mission</h2>
+                <h3>すべての人をアーティストに</h3>
+                <p>
+                    スキルレベルは問いません。<br>
+                    UD Lab.はテクノロジーですべての挑戦者に力を与え、<br>
+                    あなたの創造力を最大限に引き出します!
+                </p>
+            </div>
+            
+            <div class="row-vm-3">
+                <h2>Our Vision</h2>
+                <h3>CoreInkを業界標準へ</h3>
+                <p>
+                    プロからアマチュアまで。<br>
+                    UD Lab.は、想像、共有、コラボレーションの方法を変革し、<br>
+                    デジタルアートの新時代を形作るビジョンを思い描いています。
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <img src="logo-image.png" alt="Company Logo">
+        <h1>UnrefinedDesignLab</h1>
+        <p>&copy; 2023 Brutalist Drawing App. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

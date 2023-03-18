@@ -1,149 +1,357 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UDLab. CoreInk</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles_canvas.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/6en8XCp+HHAAK5GSLf2xlYtvJ8U2Q4U+9cuEnJoa3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
-        integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
-        crossorigin="anonymous"></script>
-
-
-</head>
-
-<body>
-    <section id="hero-section" class="scrollify">
-        <header>
-            
-            <img src="logo-image.png" alt="Company Logo">
-            <h1>UnrefinedDesignLab</h1>
-        </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IIII=ARK=HUSH</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap"
+            rel="stylesheet">
+        <!-- Add jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         
-        <div i class="hero  ">
-            <h2>UDLab. CoreInk</h2>
-            <h2>革新的な描画技術でデジタルアートの新時代へ</h2>
-            <h3>新しいドローイングツールで、クリエイティブの未来を体験しよう</h3>
-            <a href="#demo-section" class="cta-button">Try Our Demo</a>
-        </div>
-    </section>
+        <!-- Add Slick CSS -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        
+        <!-- Add Slick JS -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/carousel.js"></script>
 
-    <section id="demo-section" class="demo-section  scrollify">
+    </head>
 
-        <div class="column">
-            <div class="col-lg-6 box-shadow">
-                <h3>
-                    CoreInkのパワーと汎用性を<br>
-                    インタラクティブなデモで体験
-                </h3>
-                <p>
-                    無制限のカラー・ピッカー、ダイナミック・ブラシサイズ・コントロール、直感的なインターフェイスで<br>
-                    デジタル・アートの未来を体験してみましょう!
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <div class="demo">
-                    <div class="abstract-shape"></div>
-                    <div class="toolbar">
-                        <button id="clearButton" title="Clear canvas">CLR<i class="fas fa-eraser"></i></button>
-                        <button id="undoButton" title="Undo">UD<i class="fas fa-undo"></i></button>
-                        <button id="redoButton" title="Redo">RD<i class="fas fa-redo"></i></button>
-                        <input type="color" id="colorPicker" value="#000000" title="Choose color">
-                        <input type="range" id="brushSize" min="1" max="50" value="5" title="Adjust brush size">
-                        <label for="brushSize"><i class="fas fa-paint-brush"></i></label>
-                    </div>
-                    <canvas id="drawingCanvas" width="800" height="600"></canvas>
-                    <div id="gridOverlay" class="grid-overlay"></div>
-                    <div id="tooltip" class="hidden"></div>
-                    <div id="brushPreview" class="hidden"></div>
-                    <script src="app.js"></script>
+    <body>
+        <div id="sticky-container"  class="sticky-container">
+
+            <header>
+                <div class="logo">
+                    <!-- Add your logo here -->
+                    <a href="#">
+                        <img src="./img/Logo.png" alt="my logo" >
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#subscribe">Subscribe</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="shopping-cart">
+                    <a href="#">
+                        <img src="./img/Logo.png" alt="Shopping Cart">
+                    </a>
+                </div>
+            </header>
+            <div class="news_ticker">
+                <div class="news_ticker-text">
+                    【特別なオファー】寒いと疲れやすいし足つったり不調も多くなる気がするから、せめて睡眠時間はいっぱい取ろうと思う
                 </div>
             </div>
-        </div>
-    </section>
+            
+            <div class="announcement-ticker">
+                <button class="close-ticker">x</button>
+                <h2 class="announcement-title">お知らせ</h2>
+                <ul class="announcement-list">
+                    <li>
+                        <a href="#">
+                            最近飼い始めた猫のウィスカーちゃんですが、マグロ味のおやつが大好物だとわかりました。<br>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            最近部屋のコーヒーマシンをアップグレードしたら、予想以上に美味しいコーヒーが淹れられるようになりました。
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="thin-ticker">
+                【お知らせ】最近飼い始めた猫のウィ...
+            </div>
 
-    <section id="tech-section" class="tech-overview  scrollify">
-        <h2>CoreInkの最新技術</h2>
-        <div class="column">
-            <div class="col-md-4 col-md-4-left box-shadow">
-                <h3>直感的なインターフェース</h3>
-                <div class="flexcont">
-                    <img src="intuitive-interface-image.png" alt="Intuitive Interface">
+        </div>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>IIII: 全身ソリューション放出器</h1>
+                <p>
+                    問題は我々を恐れている。   <br>
+                    あらゆる問題は、我々の天才力を目の当たりにするだけで、
+                    自ら自己解決して消えてしまうのだ。
+                </p>
+                <div class="cta-button">天才力を解放する</a>
+            </div>
+        </section>
+        <section class="content-sections">
+            <div id="history">
+                <div  class="container">
+                    <h2>
+                        HISTORY
+                    </h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1999</div>
+                            <div class="timeline-age">Age: 1</div>
+                            <img src="./img/start-walking.jpg" alt="Walking baby" />
+                            <div class="timeline-text">
+                                <h3>高度な知的制御による<br>
+                                    二足歩行理論の確立</h3>
+                                <p>
+                                    二足歩行という分野において、初めての一歩を踏み出すという<br>
+                                    画期的な成功を収めました。<br>
+                                    <br>
+                                    この成功は、彼の内的世界にパラダイムシフトをもたらしました。<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2003</div>
+                            <div class="timeline-age">Age: 5</div>
+                            <img src="./img/drawing-text.png" alt="Walking baby" />
+                            <div class="timeline-text">
+                                <h3>世界共通言語<br>
+                                    「Handwritten Communication」
+                                    <br>をマスター</h3>
+                                <p>
+                                    彼は5歳で思考を物理的な記号に変換するという<br>
+                                    難解な技術を習得しました。<br>
+                                    <br>
+                                    ひとたび技術を習得すると、複雑で難解な物語を紡ぎ始め、<br>
+                                    表現における無限の可能性を発見しました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2004</div>
+                            <div class="timeline-age">Age: 6</div>
+                            <img src="./img/swimming-boy.png" alt="Walking baby" />
+                            <div class="timeline-text">
+                                <h3>先進的アクア・アクロバットにより、<br>
+                                    重力に逆らうことに成功</h3>
+                                <p>
+                                    流体力学と浮力への深い洞察により、<br>
+                                    水中での優雅な動きの秘密を研究し、<br>
+                                    人体の潜在的な可能性を解き明かしました。<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2006</div>
+                            <div class="timeline-age">Age: 8</div>
+                            <img src="./img/singing-boy.png" alt="Walking baby" />
+                            <div class="timeline-text">
+                                <h3>発声手法に革命を起こし、<br>
+                                    文化の壁に穴を開ける</h3>
+                                <p>
+                                    天才の天才的な才能は、<br>
+                                    言語や文化の壁を越えて人々を結びつけるという<br>
+                                    人間の声の本質的な力を再発見しました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2008</div>
+                            <div class="timeline-age">Age: 10</div>
+                            <img src="./img/wearing-something.png" alt="Walking baby" />
+                            <div class="timeline-text">
+                                <h3>アーティスティックな<br>
+                                    服飾コーディネートで<br>
+                                    自己表現に革命を起こす</h3>
+                                <p>
+                                    色彩理論と視線操作のパワーを利用して、<br>
+                                    服を着るというありふれた行為を、<br>
+                                    個性を語るアートフォームへと変貌させました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2010</div>
+                            <div class="timeline-age">Age: 12</div>
+                            <img src="./img/making-sandwitch.png" alt="Walking baby" />
+                            <div class="timeline-text">
+                                <h3>多層料理建築の<br>
+                                    革新的技術を発表</h3>
+                                <p>
+                                    初めて台所に立った天才は、<br>
+                                    食材を多層的に積層する革新的な料理デザインを見出しました。<br>
+                                    <br>
+                                    彼は美食の体験とその喜びを共有することで、<br>
+                                    国際融和を推進し、世界に調和をもたらしました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2022</div>
+                            <div class="timeline-age">Age: 24</div>
+                            <img src="./img/solving-puzzle.png" alt="Walking baby" />
+                            <div class="timeline-text">
+                                <h3>
+                                    断片化された視覚情報を<br>
+                                    復号化する技術を研究
+                                </h3>
+                                <p>
+                                    暗号技術という新たに領域に分け入った天才は、<br>
+                                    今日も視覚情報の断片化という難題を克服し、<br>
+                                    暗号の世界の秘密を解き明かそうとしている。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                    
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2 class="section-title">Our Amazing Products</h2>
+            <div class="products-description">
+                <p>
+                    私たちが極上の誠意をもってお届けするのは、<br>
+                    地球上のすべてを塗り替える力を持つ画期的な新製品です。<br>
+                </p>
+                <p>
+                    これは、驚異の独創性・技術力によってパラダイムシフトを具現化する、<br>
+                    私達の超人的な知性を持つ専門家チームの、<br>
+                    緻密な計画と巧妙な設計、そして完璧無欠な実行による圧倒的なイノベーションがもたらした成果であり、<br>
+                    溢れるほどの喜びと共に皆様に発表しなくてはなりません。<br>
+                </p>
+                <p>
+                    私達は昼も夜もわからなくなるほどに不屈の努力を重ね、果てしない困難にも果敢に立ち向かい、<br>
+                    誰もが認識すらしていなかった課題に対する究極で比類なき無敵のソリューションを<br>
+                    創り出すために全身全霊を尽くして参りました。<br>
+                </p>
+                <p>
+                    私たちが提供する製品とサービスは、皆様の日常生活を取り返しがつかないほど変革し、<br>
+                    情け容赦のないほどの成功と、無限の繁栄、そして永遠の幸福を約束する栄光の泥沼へと放り込みます。
+                </p>
+            </div>
+            <div class="product-grid">
+                <!-- Product 1: Drawing web application -->
+                <div class="product">
+                    <div class="product-img-wrapper">
+                        <img src="./img/CoreInk-sq.png" alt="Drawing app thumbnail" />
+                    </div>
+                    <h3 class="product-title">CoreInk</h3>
+                    <p class="product-description">
+                        革新的なドローイングツールは、<br>
+                        デジタルアートを新時代へ導きます。
+                    </p>
+                        <a href="./CoreInk/index.html" class="product-link">Discover More</a>
+                    </div>
+
+                    <!-- Product 2: Example product -->
+                    <div class="product">
+                        <div class="product-img-wrapper">
+                            <img src="./img/CoreInk-sq.png" alt="Example product thumbnail" />
+                        </div>
+                    <h3 class="product-title"> Example Product</h3>
+                    <p class="product-description">
+                        ここに掲載される画期的製品も、想像を絶する方法であなたの人生を変えることでしょう。
+                    </p>
+                    <a href="error-page.html" class="product-link">Discover More</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="news" class="news-section">
+            <div class="news-section-container">
+                <div class="news-section-header">
+                    <h2>
+                        お知らせ
+                    </h2>
+                </div>
+                <div class="news-section-breadcrumbs">
                     <p>
-                        シームレスで使いやすいインターフェースで、<br>
-                        創作のワークフローを強化
+                        <a href="#">TOP</a> &gt お知らせ
+                    </p>
+                </div>
+                <div class="news-sidebar">
+                    <h3>リンク集</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                ブログ
+                            </a>
+                        </li>
+                    </ul>
+                    <h3>広告</h3>
+                    <div class="promoted-article">
+                        <a href="#">
+                            <img src="./img/promoted.jpeg" alt="Promoted article image">
+                            <p>【PR】美容師に聞いた！髪を美しくする秘訣とは？</p>
+                        </a>
+                    </div>
+                    <h3>その他</h3>
+                </div>
+                <div class="news-main">
+                    
+                    <h3>
+                        最新情報
+                    </h3>
+                    <ul >
+                        <li ><a href="#">2022年度春季休暇推進事務局総合特別区域推進部が選定した『春季総合特別観光振興興行に資する桜の名所』について</a></li>
+                        <li><a href="#">愛玩用動物の健康診断結果に基づく被飼育環境下での生活習慣に関する分析と記録</a></li>
+                        <li ><a href="#">『新年の抱負（令和3年度版）』を発表しました</a></li>
+                    </ul>
+                    <div class="clickbait-article">
+                        <a href="#">
+                            <img src="./img/clickbait.jpeg" alt="Clickbait article image">
+                            <h4>知らないとヤバい… あなたの町の隠された真実62選</h4>
+                        </a>
+                    </div>
+                    <h3>
+                        リンク集
+                    </h3>
+                    <div class="news-section-link">
+                        <a href="#">
+                            ブログ
+                        </a>
+                    </div>
+                    <p>
+                        2022 IIII-Ark-Hush All rights reserved.
                     </p>
                 </div>
             </div>
-            <div class="col-md-4 col-md-4-right box-shadow">
-                <h3>無制限のカラー・ピッカー</h3>
-                <div class="flexcont">
-                    <p>
-                        精度と操作性にこだわったピッカーで、<br>
-                        あなたの色彩感覚を自由に発揮
-                    </p>
-                    <img src="color-picker-image.png" alt="Highly Designed Color Picker">
+        </section>
+        <section id="subscribe" class="newsletter-salon">
+            <div class="newsletter-container">
+                <div class="newsletter-image">
+                    <img src="./img/start-walking.jpg" alt="Newsletter illustration">
                 </div>
-            </div>
-                <div class="col-md-4 col-md-4-left box-shadow">
-                    <h3>ダイナミック・ブラシサイズ・コントロール</h3>
-                    <div class="flexcont">
-                        <img src="brush-size-control.png" alt="Dynamic Brush Size Control">
-                        <p>
-                            革新的なGUIで、ディティールを自由自在に描画
-                        </p>
-                    </div>
-            </div>
-        </div>
-            
-    
-    </section>
-    
-    <section id="vision-section" class="vision-mission  scrollify">
+                <div class="newsletter-content-wrapper">
 
-        <div class="row">
-            <div class="row-vm-3 box-shadow">
-                <h2>Our Mission</h2>
-                <h3>すべての人をアーティストに</h3>
-                <p>
-                    スキルレベルは問いません。<br>
-                    UDLab.はテクノロジーですべての挑戦者に力を与え、<br>
-                    世界中の人々の創造力を最大限に引き出します
-                </p>
+                    <h2>問題解決レターを<br>
+                        全力で受信しましょう</h2>
+                    <div class="benefits">
+                        <ul>
+                            <li>アニメが若者の精神に及ぼす影響などの、非常に重要な問題を分析するコンテンツを毎週お届け</li>
+                            <li>業界をリードするとされるあの人の、あの有料級記事のアーカイブに独占アクセス</li>
+                            <li>社会変化に隠された真実に関する、思想と口調の強い専門家による対談を大量に掲載</li>
+                            <li>今後の社会トレンドについて、落ち目のインフルエンサーがいち早く解説</li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-form">
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+                    
             </div>
-            
-            <div class="row-vm-3 box-shadow">
-                <h2>Our Vision</h2>
-                <h3>CoreInkを業界標準へ</h3>
-                <p>
-                    プロからアマチュアまで。<br>
-                    UDLab.は、インスピレーション、シェア、コラボレーションのプロセスを変革し、<br>
-                    デジタルアートの新時代を形作るビジョンを思い描いています。
-                </p>
-            </div>
-        </div>
-        
-        <img src="logo-image.png" alt="Company Logo">
-        <div class="camname">UnrefinedDesignLab</div>
+        </section>
         <footer>
-            <p>&copy; 2023 UnrefinedDesignLab All rights reserved.</p>
+            <!-- Add your footer content here -->
         </footer>
-    </section>
-
-        <script src="main.js"></script>
-        <script src="scroll.js"></script>
-
-</body>
-
-</html>
+        <script src="./js/main.js"></script>
+        <script src="./js/button.js"></script>
+    </body>
+        
+    </html>

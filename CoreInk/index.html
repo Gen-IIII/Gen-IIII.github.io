@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDLab. CoreInk</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles_canvas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/6en8XCp+HHAAK5GSLf2xlYtvJ8U2Q4U+9cuEnJoa3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+        integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <section id="hero-section" class="scrollify">
+        <header>
+            
+            <img src="./img/logo-image.png" alt="Company Logo">
+            <h1>IIII=ARK=HUSH</h1>
+        </header>
+        
+        <div i class="hero  ">
+            <h2>IIII CoreInk</h2>
+            <h2>革新的な描画技術でデジタルアートの新時代へ</h2>
+            <h3>新しいドローイングツールで、クリエイティブの未来を体験しよう</h3>
+            <a href="#demo-section" class="cta-button">Try Our Demo</a>
+        </div>
+    </section>
+
+    <section id="demo-section" class="demo-section  scrollify">
+
+        <div class="column">
+            <div class="col-lg-6 box-shadow">
+                <h3>
+                    CoreInkのパワーと汎用性を<br>
+                    インタラクティブなデモで体験
+                </h3>
+                <p>
+                    無制限のカラー・ピッカー、ダイナミック・ブラシサイズ・コントロール、直感的なインターフェイスで<br>
+                    デジタル・アートの未来を体験してみましょう!
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="demo">
+                    <div class="abstract-shape"></div>
+                    <div class="toolbar">
+                        <button id="clearButton" title="Clear canvas">CLR<i class="fas fa-eraser"></i></button>
+                        <button id="undoButton" title="Undo">UD<i class="fas fa-undo"></i></button>
+                        <button id="redoButton" title="Redo">RD<i class="fas fa-redo"></i></button>
+                        <input type="color" id="colorPicker" value="#000000" title="Choose color">
+                        <input type="range" id="brushSize" min="1" max="50" value="5" title="Adjust brush size">
+                        <label for="brushSize"><i class="fas fa-paint-brush"></i></label>
+                    </div>
+                    <canvas id="drawingCanvas" width="800" height="600"></canvas>
+                    <div id="gridOverlay" class="grid-overlay"></div>
+                    <div id="tooltip" class="hidden"></div>
+                    <div id="brushPreview" class="hidden"></div>
+                    <script src="./js/app.js"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-section" class="tech-overview  scrollify">
+        <h2>CoreInkの最新技術</h2>
+        <div class="column">
+            <div class="col-md-4 col-md-4-left box-shadow">
+                <h3>直感的なインターフェース</h3>
+                <div class="flexcont">
+                    <img src="./img/intuitive-interface-image.png" alt="Intuitive Interface">
+                    <p>
+                        シームレスで使いやすいインターフェースで、<br>
+                        創作のワークフローを強化
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-4-right box-shadow">
+                <h3>無制限のカラー・ピッカー</h3>
+                <div class="flexcont">
+                    <p>
+                        精度と操作性にこだわったピッカーで、<br>
+                        あなたの色彩感覚を自由に発揮
+                    </p>
+                    <img src="./img/color-picker-image.png" alt="Highly Designed Color Picker">
+                </div>
+            </div>
+                <div class="col-md-4 col-md-4-left box-shadow">
+                    <h3>ダイナミック・ブラシサイズ・コントロール</h3>
+                    <div class="flexcont">
+                        <img src="./img/brush-size-control.png" alt="Dynamic Brush Size Control">
+                        <p>
+                            革新的なGUIで、ディティールを自由自在に描画
+                        </p>
+                    </div>
+            </div>
+        </div>
+            
+    
+    </section>
+    
+    <section id="vision-section" class="vision-mission  scrollify">
+
+        <div class="row">
+            <div class="row-vm-3 box-shadow">
+                <h2>Our Mission</h2>
+                <h3>すべての人をアーティストに</h3>
+                <p>
+                    スキルレベルは問いません。<br>
+                    IIIIはテクノロジーですべての挑戦者に力を与え、<br>
+                    世界中の人々の創造力を最大限に引き出します
+                </p>
+            </div>
+            
+            <div class="row-vm-3 box-shadow">
+                <h2>Our Vision</h2>
+                <h3>CoreInkを業界標準へ</h3>
+                <p>
+                    プロからアマチュアまで。<br>
+                    IIIIは、インスピレーション、シェア、コラボレーションのプロセスを変革し、<br>
+                    デジタルアートの新時代を形作るビジョンを思い描いています。
+                </p>
+            </div>
+        </div>
+        
+        <img src="./img/logo-image.png" alt="Company Logo">
+        <div class="camname">IIII=ARK=HUSH</div>
+        <footer>
+            <p>&copy; 2023 IIII ARK HUSH All rights reserved.</p>
+        </footer>
+    </section>
+
+        <script src="./js/main.js"></script>
+        <script src="./js/scroll.js"></script>
+
+</body>
+
+</html>

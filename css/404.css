@@ -1,0 +1,31 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10%;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: Arial, sans-serif;
+    color: #343a40;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: Arial, sans-serif;
+    color: #343a40;
+    margin-bottom: 0px;
+}
+
+img {
+    filter: invert(21%) sepia(11%) saturate(535%) hue-rotate(169deg) brightness(94%) contrast(91%);
+    width: 250px;
+    max-width: 50%;
+    max-height: 50%;
+}

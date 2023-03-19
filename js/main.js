@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
     thinTicker.style.display = "none";
     setTimeout(adjustHeroHeight, 50); // Adjust the height after opening the ticker
   });
+  document.querySelectorAll(".social-icon").forEach((icon) => {
+    icon.addEventListener("click", (e) => {
+      e.preventDefault();
+      alert(e.target.dataset.message);
+    });
+  });
 
   // Adjust the height on window resize
   window.addEventListener("resize", adjustHeroHeight);

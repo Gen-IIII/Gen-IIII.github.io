@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+header {
+    padding: 1rem;
+    background-color: #3a3a3a;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(45deg, #ff6961, #a871ae);
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #a871ae;
+}
+
+.feature {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.feature h4 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #888;
+}
+
+.articles {
+    padding: 2rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.articles ol {
+    counter-reset: item;
+    list-style-type: none;
+}
+
+.articles li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.articles li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.articles li a:hover {
+    color: #a871ae;
+}
+
+.cta {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #3a3a3a;
+    color: #fff;
+}
+.cta button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #a871ae;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta button:hover {
+    background-color: #ff6961;
+}
+
+.cta p {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+aside {
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 50%;
+    align-items: center;
+}
+
+.ad {
+    padding: 1rem;
+    background-color: #f4f4f4;
+    margin-bottom: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #3a3a3a;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(135deg, #ff6961, #a871ae);
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #a871ae;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+}

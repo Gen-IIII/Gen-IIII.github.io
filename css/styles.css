@@ -61,12 +61,15 @@ nav ul li a:hover {
     width: 50px; /* Adjust the size of the logo as needed */
     height: 50px;
 }
-
 .shopping-cart img{
     width: 30px;    /* Adjust the size of the cart image as needed */
     height: 30px;
     margin-left: 1rem;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    transition: filter 0.3s ease;
+}
+.shopping-cart img:hover {
+    filter: brightness(85%);
 }
 .news_ticker {
     background-color: #ff4d4d;
@@ -787,4 +790,73 @@ footer {
 }
 
 /* Add any other custom styles, animations, or media queries as needed */
+footer {
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.awards {
+    width: 66%;
+}
+
+.corporate-collabs {
+    width: 33%;
+}
+
+.bottom-row {
+    width: 100%;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.awards li {
+    width: 50%;
+}
+
+.corporate-collabs li {
+    width: 100%;
+}
+
+.social-button {
+    background-color: #444;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 16px;
+}
+
+.social-button:hover {
+    background-color: #A0D5D6;
+    color: white;
+}
+
+footer img {
+    width: 80px;
+}
 

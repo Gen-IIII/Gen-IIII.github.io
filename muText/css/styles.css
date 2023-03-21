@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+/* Add this to your styles.css */
+
+header,
+.editor-container,
+.logo-container {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+.logo-container {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333333;
+}
+
+.site-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+.site-name {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.slogan {
+    font-size: 1.25rem;
+    font-weight: 300;
+    max-width: 600px;
+}
+
+/* Add this to your styles.css */
+
+.slogan-typing {
+    display: inline;
+    white-space: pre;
+    overflow: hidden;
+    border-right: 0.15em solid;
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+.editor-container {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5% 10%;
+    padding-top: 3%;
+}
+
+.editor {
+    font-size: 3px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    line-height: 1.7rem;
+    width: 99%;
+    height: 99%;
+    border: none;
+    outline: none;
+    resize: none;
+    scrollbar-width: thin;
+}
+.editor::-webkit-scrollbar {
+    width: 4px;
+}
+
+.editor::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+.editor::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 2px;
+}
+
+.editor::selection {
+    background-color: #eee;
+}

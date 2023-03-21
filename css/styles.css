@@ -434,6 +434,7 @@ a.cta-button {
 .product-img-wrapper {
     position: relative;
     overflow: hidden;
+    height: 155px;
 }
 
 .product-img-wrapper::before {
@@ -457,8 +458,7 @@ a.cta-button {
 .product-title {
     font-size: 24px;
     margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
-    /* Add a more artistic font */
+    font-family: 'Playfair Display', "Noto Serif JP", serif;
 }
 
 .product-description {

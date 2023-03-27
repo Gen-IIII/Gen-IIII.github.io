@@ -765,7 +765,64 @@ a.cta-button {
     width: 200px;
 }
 
+.publications{
+    font-family: 'BIZ UDP明朝',
+        'Source Serif Pro', serif;
+    background-color: #f3f3f3;
+    line-height: 1.6;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
+.publications-container {
+    max-width: 800px;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+.publications h2 {
+    letter-spacing: 0.075em;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.publications ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.publications li {
+    border-top: 1px solid #939aa1;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    position: relative;
+}
+.publications li:last-child {
+    border-bottom: 1px solid #939aa1;
+}
+
+.publications a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.publications h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.publications p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #666;
+}
 
 footer {
     padding: 1rem;

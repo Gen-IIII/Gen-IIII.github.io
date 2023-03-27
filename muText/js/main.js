@@ -21,3 +21,43 @@ function typeSlogan() {
         slogan.classList.remove("slogan-typing");
     }, 2000);
 }
+
+
+
+const editor = document.getElementById("editor");
+const warning = document.getElementById('warning');
+const highlightedText = document.getElementById('highlighted-text');
+
+const inappropriateWords = ['a', 'b', 'c']; // Replace with a list of inappropriate words
+
+function highlightInappropriateWords(text) {
+    const words = text.split(/\s+/);
+    let result = '';
+
+    for (const word of words) {
+        if (inappropriateWords.includes(word.toLowerCase())) {
+            result += `<span class="highlight">${word}</span> `;
+        } else {
+            result += `${word} `;
+        }
+    }
+
+    return result.trim();
+}
+
+function checkForInappropriateWords() {
+    const editorContent = editor.value;
+
+    if (editorContent) {
+        console.log('d')
+        highlightedText.innerHTML = highlightInappropriateWords(editorContent);
+        highlightedText.classList.remove("hidden");
+        warning.classList.remove("hidden");
+    } else {
+        highlightedText.classList.add("hidden");
+        warning.classList.add("hidden");
+    }
+}
+
+
+editor.addEventListener("input", checkForInappropriateWords);

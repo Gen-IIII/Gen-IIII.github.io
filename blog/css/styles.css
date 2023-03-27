@@ -279,17 +279,9 @@ main {
     font-style: italic;
     width: 200px;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    color: black;
 
 }
-.previous-page-instruction::first-line,
-.next-page-instruction::first-line {
-    font-size: 15px;
-    font-weight: bold;
-
-}
-
 
 footer {
     grid-area: footer;

@@ -1,0 +1,50 @@
+.trail-navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    list-style: none;
+}
+
+.trail-item {
+    position: relative;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    background-image: url('../../img/coreInk.png'); /* Replace with a small bread image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #000;
+}
+
+.trail-item::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -0.25rem;
+    border-width: 0.5rem 0.25rem 0 0.25rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #f8f9fa;
+}
+
+.trail-item:last-child {
+    margin-bottom: 0;
+}
+
+.trail-item:last-child::before {
+    display: none;
+}
+
+.trail-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.trail-item a:hover {
+    text-decoration: underline;
+}
+
+.trail-item.active {
+    font-weight: bold;
+}

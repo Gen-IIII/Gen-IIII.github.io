@@ -11,7 +11,8 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Montserrat', sans-serif;;
+    font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP",
+        "Avenir Next", "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
     margin-bottom: 0.5em;
 }
@@ -48,7 +49,7 @@ img {
 
 a {
     color: #ff7a00;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .parallax {
     background-attachment: fixed;
@@ -105,7 +106,8 @@ header img {
 .cta-button {
     display: inline-block;
     background-color: #ff7a00;
-    font-family: "Courier New", monospace;
+    font-family: "Futura", "Arial Rounded MT Bold", "Helvetica Rounded", Arial,
+        sans-serif;
     transition: transform 0.2s, background-color 0.2s;
     padding: 0.8em 1.5em;
     font-size: 1.2em;
